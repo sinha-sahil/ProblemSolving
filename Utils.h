@@ -11,7 +11,7 @@
 #include <vector>
 #pragma once
 
-class vectorInput{
+class vectorUtil{
     public:
     std::vector<int> vectorInp(){
         int s;
@@ -19,5 +19,13 @@ class vectorInput{
         std::vector<int> vi(s);
         for(int i=0; i<s; i++) std::cin>>vi[i];
         return vi;
+    }
+
+    void print(std::vector<int> vi){
+        std::cout<<"Vector:: ";
+        for(auto i: vi){
+            std::cout<<i<<" ";
+        }
+        std::cout<<std::endl;
     }
 };
